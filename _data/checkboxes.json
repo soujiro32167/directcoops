@@ -1,0 +1,146 @@
+{
+    business_office_supplies: [
+        {
+            label: "LED Bulbs (Generic)"
+        },
+        {
+            label: "Printer Ink (New)"
+        },
+        {
+            label: "Printer Ink (Refill)"
+        },
+        {
+            label: "Printer Paper (Regular)"
+        },
+        {
+            label: "Printer Paper (High Quality)"
+        },
+        {
+            label: "Cleaning Supplies (Brand Name)"
+        },
+        {
+            label: "Cleaning Supplies (Generic)"
+        },
+        {
+            label: "LED Bulbs (Brand Name)"
+        }
+    ],
+    food_restaurant_supplies: [
+        {
+            "label": "Flour (Organic)"
+        },
+        {
+            "label": "Flour (Non-organic)"
+        },
+        {
+            "label": "Rice (Organic)"
+        },
+        {
+            "label": "Rice (Non-organic)"
+        },
+        {
+            "label": "Pasta (Organic)"
+        },
+        {
+            "label": "Pasta (Non-organic)"
+        },
+        {
+            "label": "Sugar (Organic)"
+        },
+        {
+            "label": "Sugar (Non-organic)"
+        }
+    ],
+    coffee_and_tea: [
+        {
+            "label": "Coffee (Brand Name)"
+        },
+        {
+            "label": "Coffee (Generic)"
+        },
+        {
+            "label": "Tea (Brand Name)"
+        },
+        {
+            "label": "Tea (Generic)"
+        },
+        {
+            "label": "Coffee Filters (Brand Name)"
+        },
+        {
+            "label": "Coffee Filters (Generic)"
+        }
+    ],
+    hardware: [
+        {
+            "label": "Paint (Brand Name)"
+        },
+        {
+            "label": "Paint (Generic)"
+        },
+        {
+            "label": "Cleaners (Brand Name)"
+        },
+        {
+            "label": "Cleaners (Generic)"
+        }
+    ],
+    automotive: [
+        {
+            "label": "Motor Oil (Brand Name)"
+        },
+        {
+            "label": "Motor Oil (Generic)"
+        },
+        {
+            "label": "Winshield Washer (Brand Name)"
+        },
+        {
+            "label": "Winshield Washer (Generic)"
+        },
+        {
+            "label": "Air Filter (Brand Name)"
+        },
+        {
+            "label": "Air Filter (Generic)"
+        },
+        {
+            "label": "Brake Fluid (Brand Name)"
+        },
+        {
+            "label": "Brake Fluid (Generic)"
+        }
+    ],
+    pharmacy: [
+      {
+        "label": "PMS-DOMPERIDONE 10MG, 500-pack"
+      },
+      {
+        "label": "SAB-HALOPERIDOL INJ 5MG/ML, 10X1ML"
+      },
+      {
+        "label": "RESTASIS OPH 0.05% DROPS, 30X0.4ML"
+      },
+      {
+        "label": "ACT SILDENAFIL 100MG (BLPK), 4-pack"
+      },
+      {
+        "label": "PMS-SILDENAFIL TB 100MG, 4-pack"
+      },
+      {
+        "label": "PMS-COLCHICINE 0.6MG, 100-pack"
+      },
+      {
+        "label": "COLCHICINE .6MG (ODN), 100-pack"
+      },
+      {
+        "label": "ACT CELECOXIB 200MG, 100-pack"
+      },
+      {
+        "label": "PMS-RISEDRONATE 35MG BLISTER 4-pack"
+      },
+      {
+        "label": "PMS-MEMANTINE 10MG TABS, 30-pack"
+      }
+    ]
+}

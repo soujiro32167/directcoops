@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<h2>Vote your interests</h2>
+<p>Check the boxes of the products you would be interested in and vote your choice. When the minimum threshold is reached we will contact you to confirm your interest at the price we have achieved and include you in the order.</p>
+<form action="#" id="cf7-form">
+    <!-- Tab panes -->
+    <div class="tab-content">
+        {% for category in site.data.categories %}
+            {% include tab.html id=category.form_name isfirst=forloop.first %}
+        {% endfor %}
+    </div>
+    <div class="form-group row">
+        <div class="col-md-4">
+            <label>Email (required)
+                <input type="email" class="form-control" name="user_email[]" placeholder="Email" /></label>
+        </div>
+        <div class="col-md-4">
+            <label>Business Name
+                <input type="text" class="form-control" name="user_buisness_name[]" /></label>
+        </div>
+        <div class="col-md-4">
+            <label for="user_email">Business Category
+            <select class="form-control" name="user_business_category[]">
+                <option value="0" selected="1">Choose a category</option>
+                <option value="Airport">Airport</option>
+                <option value="Arts/Entertainment/Nightlife">Arts/Entertainment/Nightlife</option>
+                <option value="Attractions/Things to Do">Attractions/Things to Do</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Bank/Financial Services">Bank/Financial Services</option>
+                <option value="Bar">Bar</option>
+                <option value="Book Store">Book Store</option>
+                <option value="Business Services">Business Services</option>
+                <option value="Church/Religious Organization">Church/Religious Organization</option>
+                <option value="Club">Club</option>
+                <option value="Community/Government">Community/Government</option>
+                <option value="Concert Venue">Concert Venue</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Event Planning/Event Services">Event Planning/Event Services</option>
+                <option value="Food/Grocery">Food/Grocery</option>
+                <option value="Health/Medical/Pharmacy">Health/Medical/Pharmacy</option>
+                <option value="Home Improvement">Home Improvement</option>
+                <option value="Hospital/Clinic">Hospital/Clinic</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Landmark">Landmark</option>
+                <option value="Lawyer">Lawyer</option>
+                <option value="Library">Library</option>
+                <option value="Local Business">Local Business</option>
+                <option value="Middle School">Middle School</option>
+                <option value="Movie Theater">Movie Theater</option>
+                <option value="Museum/Art Gallery">Museum/Art Gallery</option>
+                <option value="Outdoor Gear/Sporting Goods">Outdoor Gear/Sporting Goods</option>
+                <option value="Pet Services">Pet Services</option>
+                <option value="Professional Services">Professional Services</option>
+                <option value="Public Places">Public Places</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Restaurant/Cafe">Restaurant/Cafe</option>
+                <option value="School">School</option>
+                <option value="Shopping/Retail">Shopping/Retail</option>
+                <option value="Spas/Beauty/Personal Care">Spas/Beauty/Personal Care</option>
+                <option value="Sports Venue">Sports Venue</option>
+                <option value="Sports/Recreation/Activities">Sports/Recreation/Activities</option>
+                <option value="Tours/Sightseeing">Tours/Sightseeing</option>
+                <option value="Transportation">Transportation</option>
+                <option value="University">University</option>
+            </select></label>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-default btn-large btn-block btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
