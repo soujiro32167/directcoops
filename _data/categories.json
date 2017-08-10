@@ -25,6 +25,6 @@
     },
     {
       label: "Electronics & Cellphones",
-      form_name "electronics_and_cellphones"
+      form_name: "electronics_and_cellphones"
     }
 ]
