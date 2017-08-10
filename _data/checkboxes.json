@@ -142,5 +142,16 @@
       {
         "label": "PMS-MEMANTINE 10MG TABS, 30-pack"
       }
+    ],
+    "electronics_and_cellphones": [
+      {
+        "label": "TVs (brand name / generic)"
+      },
+      {
+        "label": "Cellphones (brand name / generic)"
+      },
+      {
+        "label": "Air Conditioner (brand name / generic)"
+      }
     ]
 }

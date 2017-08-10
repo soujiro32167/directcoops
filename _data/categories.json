@@ -22,5 +22,9 @@
     {
         label: "Pharmacy",
         form_name: "pharmacy"
+    },
+    {
+      label: "Electronics & Cellphones",
+      form_name "electronics_and_cellphones"
     }
 ]
