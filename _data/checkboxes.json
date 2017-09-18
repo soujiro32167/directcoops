@@ -109,7 +109,7 @@
     {
       "label": "Cleaners (Generic)",
       "id": "cleaners__generic_"
-    }
+    },
     {
       "label": "Asphalt Pot Hole Filler",
       "id": "asphalt_pot_hole_filler"
@@ -147,7 +147,7 @@
     {
       "label": "Brake Fluid (Generic)",
       "id": "brake_fluid__generic_"
-    }
+    },
     {
       "label": "Brake Pads (Brand Name)",
       "id": "break_pads__brand_name_"
