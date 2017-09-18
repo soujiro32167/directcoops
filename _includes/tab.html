@@ -3,7 +3,6 @@
         <div class="col-sm-6">
             {% assign checkboxes = site.data.checkboxes[include.id] %}
             {% assign half_length = checkboxes | size | divided_by: 2.0 | ceil %}
-            <span>Half length: {{ half_length }}</span>
             {% for checkbox in checkboxes limit: half_length %}
                 {% include checkbox.html name=checkbox.id value=true label=checkbox.label %}
             {% endfor %}
