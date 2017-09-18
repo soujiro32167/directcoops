@@ -1,30 +1,30 @@
 [
     {
-        label: "Business &amp; Office Supplies",
-        form_name: "business_office_supplies"
+        "label": "Business &amp; Office Supplies",
+        "form_name": "business_office_supplies"
     },
     {
-        label: "Food &amp; Restaurant Supplies",
-        form_name: "food_restaurant_supplies"
+        "label": "Food &amp; Restaurant Supplies",
+        "form_name": "food_restaurant_supplies"
     },
     {
-        label: "Coffee and Tea",
-        form_name: "coffee_and_tea"
+        "label": "Coffee and Tea",
+        "form_name": "coffee_and_tea"
     },
     {
-        label: "Hardware",
-        form_name: "hardware"
+        "label": "Hardware",
+        "form_name": "hardware"
     },
     {
-        label: "Automotive",
-        form_name: "automotive"
+        "label": "Automotive",
+        "form_name": "automotive"
     },
     {
-        label: "Pharmacy",
-        form_name: "pharmacy"
+        "label": "Pharmacy",
+        "form_name": "pharmacy"
     },
     {
-      label: "Electronics & Cellphones",
-      form_name: "electronics_and_cellphones"
+      "label": "Electronics & Cellphones",
+      "form_name": "electronics_and_cellphones"
     }
 ]

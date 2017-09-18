@@ -3,13 +3,13 @@
         <div class="col-sm-6">
             {% assign checkboxes = site.data.checkboxes[include.id] %}
             {% assign half_length = checkboxes | size | divided_by: 2 %}
-            {% for checkbox in checkboxes limit: half_length %}
-                {% include checkbox.html name=include.id value=checkbox.label label=checkbox.label %}
+            {% for checkbox in checkboxes limit: half_length | plus:1 %}
+                {% include checkbox.html name=checkbox.id value=true label=checkbox.label %}
             {% endfor %}
         </div>
         <div class="col-sm-6">
-            {% for checkbox in checkboxes limit: half_length offset: half_length %}
-                {% include checkbox.html name=include.id value=checkbox.label label=checkbox.label %}
+            {% for checkbox in checkboxes offset: half_length %}
+                {% include checkbox.html name=checkbox.id value=true label=checkbox.label %}
             {% endfor %}
         </div>
     </div>
