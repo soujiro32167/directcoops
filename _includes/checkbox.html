@@ -1,4 +1,4 @@
 <div class="checkbox">
     <label><input type="checkbox" name="{{ include.name }}" value="{{ include.value }}"/>{{ include.label }}</label>
-    <span class="badge badge-pill badge-info">[cfdb-count form="Vote_2" filter="{{ include.name }}=true"] votes</span>
+    <span class="badge badge-pill badge-info">[math_eval] {{ include.fudge}} + [cfdb-count form="Vote_2" filter="{{ include.name }}=true"] [/math_eval] votes</span>
 </div>
