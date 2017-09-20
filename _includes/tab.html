@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-6">
             {% for checkbox in checkboxes offset: half_length %}
-                {% include checkbox.html name=checkbox.id value=true label=checkbox.label %}
+                {% include checkbox.html name=checkbox.id value=true label=checkbox.label fudge=checkbox.fudge %}
             {% endfor %}
         </div>
     </div>
