@@ -1,6 +1,11 @@
 {
   "business_office_supplies": [
     {
+      "label": "LED Bulbs (Brand Name)",
+      "id": "led_bulbs__brand_name_",
+      "fudge": 179
+    },
+    {
       "label": "LED Bulbs (Generic)",
       "id": "led_bulbs__generic_",
       "fudge": 168
@@ -34,11 +39,6 @@
       "label": "Cleaning Supplies (Generic)",
       "id": "cleaning_supplies__generic_",
       "fudge": 180
-    },
-    {
-      "label": "LED Bulbs (Brand Name)",
-      "id": "led_bulbs__brand_name_",
-      "fudge": 179
     }
   ],
   "food_restaurant_supplies": [
