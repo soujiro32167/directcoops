@@ -1,6 +1,10 @@
 {
   "business_office_supplies": [
     {
+      "label": "LED Bulbs (Brand Name)",
+      "id": "led_bulbs__brand_name_"
+    },
+    {
       "label": "LED Bulbs (Generic)",
       "id": "led_bulbs__generic_"
     },
@@ -27,10 +31,6 @@
     {
       "label": "Cleaning Supplies (Generic)",
       "id": "cleaning_supplies__generic_"
-    },
-    {
-      "label": "LED Bulbs (Brand Name)",
-      "id": "led_bulbs__brand_name_"
     }
   ],
   "food_restaurant_supplies": [
