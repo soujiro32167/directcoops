@@ -21,8 +21,25 @@
   <body>
 
     <div class="container-fluid">
+    <style>
+      .form-group > label {
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .nav.nav-pills.nav-stacked {
+        margin: 0;
+      }
+      .checkbox br {
+        display: none;
+      }
+      .required-mark {
+        color: #e80000;
+      }
+    </style>
+
       <div class="row">
         <div class="col-xs-12">
+          <p>Fields marked with an <span class="required-mark">*</span> are required</p>
           <div class="form-group">
             <label for="account_representative">Account Representative:</label>
             [text account_representative id:account_representative class:form-control]
@@ -45,13 +62,13 @@
           </div>
 
           <div class="form-group">
-            <label for="phone_number">Phone:</label>
-            [tel* phone_number id:phone_number class:form-control]
+            <label for="phone_number">Phone: <span class="required-mark">*</span></label>
+            [tel* phone_number id:phone_number class:form-control required:true]
           </div>
 
           <div class="form-group">
-            <label for="user_email">Email:</label>
-            [email* user_email id:user_email class:form-control]
+            <label for="user_email">Email: <span class="required-mark">*</span></label>
+            [email* user_email id:user_email class:form-control required:true]
           </div>
 
           <div class="form-group">
@@ -111,7 +128,116 @@
             </select>
           </div>
 
+          <hr />
 
+          <div class="form-group">
+            <label for="business_quality">How is your business doing?</label>
+              [select business_quality id:business_quality class:form-control "Well" "Poorly"]
+          </div>
+
+          <div class="form-group">
+            <label for="business_quality_reason">(If doing poorly) Why are you doing poorly?</label>
+              [text business_quality id:business_quality class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="competition">Who do you see as your immediate competition?</label>
+              [select competition id:competition class:form-control "Big chains" "Internet companies"]
+          </div>
+
+          <div class="form-group">
+            <label for="reduce_cost_buy_together">If you could buy the same products and services, that you currently use for your business, together with other businesses like yourself, would that reduce your costs?</label>
+              [select reduce_cost_buy_together id:reduce_cost_buy_together class:form-control "Yes" "No"]
+          </div>
+
+          <div class="form-group">
+            <label for="tv_internet_phone_amount">How much are you paying for your TV, internet and phone services?</label>
+              [text tv_internet_phone_amount id:tv_internet_phone_amount class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="happy_with_service">Are you happy with the services you are currently receiving?</label>
+              [select happy_with_service id:happy_with_service class:form-control "Yes" "No"]
+          </div>
+
+          <div class="form-group">
+            <label for="rate_selecion">Would you prefer a less expensive month-to-month prepaid rate, or a better than market contract rate?</label>
+              [select rate_selecion id:rate_selecion class:form-control "Prepaid rate" "Contract rate"]
+          </div>
+
+          <div class="form-group">
+            <label for="credit_card_provider">Who do you use for credit card processing?</label>
+              [text credit_card_provider id:credit_card_provider class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="payment_processing_select">Did you buy or rent your payment processing equipment?</label>
+              [select payment_processing_select id:payment_processing_select class:form-control "Buy" "Rent"]
+          </div>
+
+          <div class="form-group">
+            <label for="contract_length">How long is your contract?</label>
+              [text contract_length id:contract_length class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="monthly_processing_volume">Is your typical monthly processing volume:</label>
+              [select monthly_processing_volume id:monthly_processing_volume class:form-control "Less than $10,000" "Over $10,000 but less than $50,000" "Over $50,000"]
+          </div>
+
+          <div class="form-group">
+            <label for="rule_change_aware">Are you aware of the recent changes to the rules governing credit card processors that require them to allow early termination of a contract without penalty, if they change their terms and conditions?</label>
+              [select rule_change_aware id:rule_change_aware class:form-control "Yes" "No"]
+          </div>
+
+          <div class="form-group">
+            <label for="using_bdc">Are you currently using any business financing from BDC (Business Development Bank of Canada) or any other major financial institution (in Canada or the USA)?</label>
+              [select using_bdc id:using_bdc class:form-control "Yes" "No"]
+          </div>
+
+          <div class="form-group">
+            <strong>Are you a member of:</strong>
+            <div class="checkbox">
+              <label><input type="checkbox" name="professional_membership[]" value="cfib">Canada - CFIB (Canadian Federation of Independent Businesses)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="professional_membership[]" value="orhma">Canada - ORHMA (Ontario Restaurant, Hotel & Motel Association)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="professional_membership[]" value="nfib">USA - NFIB (National Federation of Independent Businesses)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="professional_membership[]" value="ilsr">USA - ILSR (Institute for Local Self-Reliance)</label>
+            </div>
+          </div>
+
+          <hr />
+
+          <strong>If the business is a restaurant / hotel:</strong>
+
+          <div class="form-group">
+            <label for="frustrating_regulations">What city regulations do you find the most frustrating to work through in operating your restaurant business?</label>
+              [text frustrating_regulations id:frustrating_regulations class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="unfair_business_expense">What business expense do you pay that you feel is unfair or you would like to see lowered?</label>
+              [text unfair_business_expense id:unfair_business_expense class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="opinion_on_inspection">How did you feel after your last inspection? (Health inspector, Ministry of Labour inspector or other)</label>
+              [text opinion_on_inspection id:opinion_on_inspection class:form-control]
+          </div>
+
+          <div class="form-group">
+            <label for="expand_business_knowledge">In what area of running your business do you feel you could have more knowledge or education in? (Food safety, Labour laws etc.)</label>
+              [text expand_business_knowledge id:expand_business_knowledge class:form-control]
+          </div>
+
+          <hr />
+
+          <strong>Which of the following products do you most frequently buy and would be interested in saving up to 50% on, by joining a buying group? (Please select at least 3-5 products)</strong>
         </div>
       </div>
       <div class="row">
@@ -127,6 +253,43 @@
               {{ content }}
           </div>
       </div>
+
+      <hr />
+
+      <div class="form-horizontal">
+        <strong>Are there any additional products that you would like to nominate for group-buying (please indicate no more than 5)?</strong>
+        <div class="form-group">
+          <label for="nominate_group1" class="col-sm-2 control-label">1.</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="nominate_group1" name="nominate_group[]">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nominate_group2" class="col-sm-2 control-label">2.</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="nominate_group2" name="nominate_group[]">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nominate_group3" class="col-sm-2 control-label">3.</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="nominate_group3" name="nominate_group[]">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nominate_group4" class="col-sm-2 control-label">4.</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="nominate_group4" name="nominate_group[]">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nominate_group5" class="col-sm-2 control-label">5.</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="nominate_group5" name="nominate_group[]">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-default btn-large btn-block btn-primary">Submit</button>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
