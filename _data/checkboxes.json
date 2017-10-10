@@ -3,45 +3,41 @@
     {
       "label": "LED Bulbs (Brand Name)",
       "id": "led_bulbs__brand_name_",
-      "fudge": 179,
-      "id": "led_bulbs__brand_name_"
+      "fudge": 679
     },
     {
       "label": "LED Bulbs (Generic)",
       "id": "led_bulbs__generic_",
-      "fudge": 168
+      "fudge": 268
     },
     {
       "label": "Printer Ink (New)",
       "id": "printer_ink__new_",
-      "fudge": 173
+      "fudge": 273
     },
     {
       "label": "Printer Ink (Refill)",
       "id": "printer_ink__refill_",
-      "fudge": 75
+      "fudge": 175
     },
     {
       "label": "Printer Paper (Regular)",
       "id": "printer_paper__regular_",
-      "fudge": 88
+      "fudge": 188
     },
     {
       "label": "Printer Paper (High Quality)",
       "id": "printer_paper__high_quality_",
-      "fudge": 55
+      "fudge": 155
     },
     {
       "label": "Cleaning Supplies (Brand Name)",
       "id": "cleaning_supplies__brand_name_",
-      "fudge": 70
+      "fudge": 170
     },
     {
       "label": "Cleaning Supplies (Generic)",
-
-      "label": "Cleaning Supplies (Generic)",
-      "id": "leg_supplies__generic_",
-      "fudge": 180,
+      "fudge": 580,
       "id": "cleaning_supplies__generic_"
     }
   ],
@@ -49,222 +45,222 @@
     {
       "label": "Flour (Organic)",
       "id": "flour__organic_",
-      "fudge": 188
+      "fudge": 288
     },
     {
       "label": "Flour (Non-organic)",
       "id": "flour__non_organic_",
-      "fudge": 96
+      "fudge": 196
     },
     {
       "label": "Rice (Organic)",
       "id": "rice__organic_",
-      "fudge": 99
+      "fudge": 199
     },
     {
       "label": "Rice (Non-organic)",
       "id": "rice__non_organic_",
-      "fudge": 175
+      "fudge": 275
     },
     {
       "label": "Pasta (Organic)",
       "id": "pasta__organic_",
-      "fudge": 81
+      "fudge": 181
     },
     {
       "label": "Pasta (Non-organic)",
       "id": "pasta__non_organic_",
-      "fudge": 108
+      "fudge": 208
     },
     {
       "label": "Sugar (Organic)",
       "id": "sugar__organic_",
-      "fudge": 186
+      "fudge": 286
     },
     {
       "label": "Sugar (Non-organic)",
       "id": "sugar__non_organic_",
-      "fudge": 112
+      "fudge": 212
     }
   ],
   "coffee_and_tea": [
     {
       "label": "Coffee (Brand Name)",
       "id": "coffee__brand_name_",
-      "fudge": 89
+      "fudge": 589
     },
     {
       "label": "Coffee (Generic)",
       "id": "coffee__generic_",
-      "fudge": 81
+      "fudge": 181
     },
     {
       "label": "Tea (Brand Name)",
       "id": "tea__brand_name_",
-      "fudge": 116
+      "fudge": 216
     },
     {
       "label": "Tea (Generic)",
       "id": "tea__generic_",
-      "fudge": 73
+      "fudge": 173
     },
     {
       "label": "Coffee Filters (Brand Name)",
       "id": "coffee_filters__brand_name_",
-      "fudge": 91
+      "fudge": 191
     },
     {
       "label": "Coffee Filters (Generic)",
       "id": "coffee_filters__generic_",
-      "fudge": 168
+      "fudge": 268
     }
   ],
   "hardware": [
     {
       "label": "Paint (Brand Name)",
       "id": "paint__brand_name_",
-      "fudge": 166
+      "fudge": 266
     },
     {
       "label": "Paint (Generic)",
       "id": "paint__generic_",
-      "fudge": 194
+      "fudge": 294
     },
     {
       "label": "Cleaners (Brand Name)",
       "id": "cleaners__brand_name_",
-      "fudge": 61
+      "fudge": 161
     },
     {
       "label": "Cleaners (Generic)",
       "id": "cleaners__generic_",
-      "fudge": 198
+      "fudge": 298
     },
     {
       "label": "Asphalt Pot Hole Filler",
       "id": "asphalt_pot_hole_filler",
-      "fudge": 98
+      "fudge": 198
     }
   ],
   "automotive": [
     {
       "label": "Motor Oil (Brand Name)",
       "id": "motor_oil__brand_name_",
-      "fudge": 198
+      "fudge": 298
     },
     {
       "label": "Motor Oil (Generic)",
       "id": "motor_oil__generic_",
-      "fudge": 195
+      "fudge": 295
     },
     {
       "label": "Winshield Washer (Brand Name)",
       "id": "winshield_washer__brand_name_",
-      "fudge": 115
+      "fudge": 215
     },
     {
       "label": "Winshield Washer (Generic)",
       "id": "winshield_washer__generic_",
-      "fudge": 88
+      "fudge": 188
     },
     {
       "label": "Air Filter (Brand Name)",
       "id": "air_filter__brand_name_",
-      "fudge": 64
+      "fudge": 164
     },
     {
       "label": "Air Filter (Generic)",
       "id": "air_filter__generic_",
-      "fudge": 83
+      "fudge": 183
     },
     {
       "label": "Brake Fluid (Brand Name)",
       "id": "brake_fluid__brand_name_",
-      "fudge": 108
+      "fudge": 208
     },
     {
       "label": "Brake Fluid (Generic)",
       "id": "brake_fluid__generic_",
-      "fudge": 108
+      "fudge": 208
     },
     {
       "label": "Brake Pads (Brand Name)",
       "id": "break_pads__brand_name_",
-      "fudge": 177
+      "fudge": 277
     },
     {
       "label": "Brake Pads (Generic)",
       "id": "break_pads__generic_",
-      "fudge": 183
+      "fudge": 283
     }
   ],
   "pharmacy": [
     {
       "label": "PMS-DOMPERIDONE 10MG, 500-pack",
       "id": "pms_domperidone_10mg__500_pack",
-      "fudge": 98
+      "fudge": 198
     },
     {
       "label": "SAB-HALOPERIDOL INJ 5MG/ML, 10X1ML",
       "id": "sab_haloperidol_inj_5mg_ml__10x1ml",
-      "fudge": 78
+      "fudge": 178
     },
     {
       "label": "RESTASIS OPH 0.05% DROPS, 30X0.4ML",
       "id": "restasis_oph_0_05__drops__30x0_4ml",
-      "fudge": 161
+      "fudge": 261
     },
     {
       "label": "ACT SILDENAFIL 100MG (BLPK), 4-pack",
       "id": "act_sildenafil_100mg__blpk___4_pack",
-      "fudge": 132
+      "fudge": 232
     },
     {
       "label": "PMS-SILDENAFIL TB 100MG, 4-pack",
       "id": "pms_sildenafil_tb_100mg__4_pack",
-      "fudge": 158
+      "fudge": 258
     },
     {
       "label": "PMS-COLCHICINE 0.6MG, 100-pack",
       "id": "pms_colchicine_0_6mg__100_pack",
-      "fudge": 141
+      "fudge": 241
     },
     {
       "label": "COLCHICINE .6MG (ODN), 100-pack",
       "id": "colchicine__6mg__odn___100_pack",
-      "fudge": 175
+      "fudge": 275
     },
     {
       "label": "ACT CELECOXIB 200MG, 100-pack",
       "id": "act_celecoxib_200mg__100_pack",
-      "fudge": 136
+      "fudge": 236
     },
     {
       "label": "PMS-RISEDRONATE 35MG BLISTER 4-pack",
       "id": "pms_risedronate_35mg_blister_4_pack",
-      "fudge": 171
+      "fudge": 271
     },
     {
       "label": "PMS-MEMANTINE 10MG TABS, 30-pack",
       "id": "pms_memantine_10mg_tabs__30_pack",
-      "fudge": 155
+      "fudge": 255
     }
   ],
   "electronics_and_cellphones": [
     {
       "label": "TVs (brand name / generic)",
       "id": "tvs__brand_name___generic_",
-      "fudge": 98
+      "fudge": 198
     },
     {
       "label": "Cellphones (brand name / generic)",
       "id": "cellphones__brand_name___generic_",
-      "fudge": 110
+      "fudge": 210
     },
     {
       "label": "Air Conditioner (brand name / generic)",
       "id": "air_conditioner__brand_name___generic_",
-      "fudge": 85
+      "fudge": 185
     }
   ]
 }

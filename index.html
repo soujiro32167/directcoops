@@ -3,24 +3,45 @@ layout: default
 ---
 <h2>Products</h2>
   <!-- Tab panes -->
+  <style>
+    .form-group > label {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .nav.nav-pills.nav-stacked {
+      margin: 0;
+    }
+    .checkbox br {
+      display: none;
+    }
+    .required-mark {
+      color: #e80000;
+    }
+  </style>
   <div class="tab-content">
       {% for category in site.data.categories %}
           {% include tab.html id=category.form_name isfirst=forloop.first %}
       {% endfor %}
   </div>
-  <div class="form-group row">
+  <div class="row">
       <div class="col-md-4">
-          <label>Email (required)
-              <input type="email" class="form-control" name="user_email[]" placeholder="Email" /></label>
+        <div class="form-group">
+          <label for="user_email">Email (required)</label>
+          [email* user_email id:user_email class:form-control placeholder "Email"]
+        </div>
       </div>
       <div class="col-md-4">
-          <label>Business Name
-              <input type="text" class="form-control" name="user_buisness_name[]" /></label>
+        <div class="form-group">
+          <label for="user_buisness_name">Business Name</label>
+          [text* user_business_name id:user_business_name class:form-control placeholder "Business Name"]
+        </div>
       </div>
       <div class="col-md-4">
-          <label for="business_category">Business Category
-          <select class="form-control" name="user_business_category[]" id="business_category">
-              <option value="0" selected="1">Choose a category</option>
+        <div class="form-group">
+          <label for="business_category">Business Category</label>
+          <select class="form-control" name="user_business_category" id="business_category">
+            <option value="none" selected="1">Choose a category</option>
+              <option value="Agriculture/Farming">Agriculture/Farming</option>
               <option value="Airport">Airport</option>
               <option value="Arts/Entertainment/Nightlife">Arts/Entertainment/Nightlife</option>
               <option value="Attractions/Things to Do">Attractions/Things to Do</option>
@@ -47,6 +68,7 @@ layout: default
               <option value="Middle School">Middle School</option>
               <option value="Movie Theater">Movie Theater</option>
               <option value="Museum/Art Gallery">Museum/Art Gallery</option>
+              <option value="Other">Other</option>
               <option value="Outdoor Gear/Sporting Goods">Outdoor Gear/Sporting Goods</option>
               <option value="Pet Services">Pet Services</option>
               <option value="Professional Services">Professional Services</option>
@@ -58,15 +80,25 @@ layout: default
               <option value="Spas/Beauty/Personal Care">Spas/Beauty/Personal Care</option>
               <option value="Sports Venue">Sports Venue</option>
               <option value="Sports/Recreation/Activities">Sports/Recreation/Activities</option>
+              <option value="Tech/IT">Tech/IT</option>
               <option value="Tours/Sightseeing">Tours/Sightseeing</option>
               <option value="Transportation">Transportation</option>
               <option value="University">University</option>
-          </select></label>
-
+              <option disabled>--------- Co-ops ---------</option>
+              <option value="Agricultural Co-ops">Agricultural Co-ops</option>
+              <option value="Artisan Co-ops">Artisan Co-ops</option>
+              <option value="Childcare Co-ops">Childcare Co-ops</option>
+              <option value="Financial Co-ops">Financial Co-ops</option>
+              <option value="Food Co-ops">Food Co-ops</option>
+              <option value="Housing Co-ops">Housing Co-ops</option>
+              <option value="Utility Co-ops">Utility Co-ops</option>
+              <option value="General/Other Co-ops">General/Other Co-ops</option>
+          </select>
+        </div>
       </div>
   </div>
   <div class="row">
       <div class="col-xs-12">
-          <button type="submit" class="btn btn-default btn-large btn-block btn-primary">Submit</button>
+          <button type="submit" class="btn btn-default">Submit</button>
       </div>
   </div>

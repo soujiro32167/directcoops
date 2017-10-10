@@ -20,11 +20,7 @@
         "form_name": "automotive"
     },
     {
-        "label": "Pharmacy",
+        "label": "Pharmacy (pharmacies only)",
         "form_name": "pharmacy"
-    },
-    {
-      "label": "Electronics & Cellphones",
-      "form_name": "electronics_and_cellphones"
     }
 ]

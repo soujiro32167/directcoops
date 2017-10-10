@@ -42,11 +42,11 @@
           <p>Fields marked with an <span class="required-mark">*</span> are required</p>
           <div class="form-group">
             <label for="account_representative">Account Representative:</label>
-            [text account_representative id:account_representative class:form-control]
+            [dynamictext* account_representative id:account_representative class:form-control "CF7_get_current_user key=display_name" ]
           </div>
           <div class="form-group">
             <label for="representative_email">Representative Email:</label>
-            [email representative_email id:representative_email class:form-control]
+            [dynamictext* representative_email id:representative_email class:form-control "CF7_get_current_user key=user_email"]
           </div>
 
           <hr />
@@ -122,6 +122,7 @@
                 <option value="Spas/Beauty/Personal Care">Spas/Beauty/Personal Care</option>
                 <option value="Sports Venue">Sports Venue</option>
                 <option value="Sports/Recreation/Activities">Sports/Recreation/Activities</option>
+                <option value="Tech/IT">Tech/IT</option>
                 <option value="Tours/Sightseeing">Tours/Sightseeing</option>
                 <option value="Transportation">Transportation</option>
                 <option value="University">University</option>
@@ -131,72 +132,72 @@
           <hr />
 
           <div class="form-group">
-            <label for="business_quality">How is your business doing?</label>
+            <label for="business_quality">1. How is your business doing?</label>
               [select business_quality id:business_quality class:form-control "Well" "Poorly"]
           </div>
 
           <div class="form-group">
-            <label for="business_quality_reason">(If doing poorly) Why are you doing poorly?</label>
+            <label for="business_quality_reason">2. (If doing poorly) Why are you doing poorly?</label>
               [text business_quality id:business_quality class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="competition">Who do you see as your immediate competition?</label>
+            <label for="competition">3. Who do you see as your immediate competition?</label>
               [select competition id:competition class:form-control "Big chains" "Internet companies"]
           </div>
 
           <div class="form-group">
-            <label for="reduce_cost_buy_together">If you could buy the same products and services, that you currently use for your business, together with other businesses like yourself, would that reduce your costs?</label>
+            <label for="reduce_cost_buy_together">4. If you could buy the same products and services, that you currently use for your business, together with other businesses like yourself, would that reduce your costs?</label>
               [select reduce_cost_buy_together id:reduce_cost_buy_together class:form-control "Yes" "No"]
           </div>
 
           <div class="form-group">
-            <label for="tv_internet_phone_amount">How much are you paying for your TV, internet and phone services?</label>
+            <label for="tv_internet_phone_amount">5. How much are you paying for your TV, internet and phone services?</label>
               [text tv_internet_phone_amount id:tv_internet_phone_amount class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="happy_with_service">Are you happy with the services you are currently receiving?</label>
+            <label for="happy_with_service">6. Are you happy with the services you are currently receiving?</label>
               [select happy_with_service id:happy_with_service class:form-control "Yes" "No"]
           </div>
 
           <div class="form-group">
-            <label for="rate_selecion">Would you prefer a less expensive month-to-month prepaid rate, or a better than market contract rate?</label>
+            <label for="rate_selecion">7. Would you prefer a less expensive month-to-month prepaid rate, or a better than market contract rate?</label>
               [select rate_selecion id:rate_selecion class:form-control "Prepaid rate" "Contract rate"]
           </div>
 
           <div class="form-group">
-            <label for="credit_card_provider">Who do you use for credit card processing?</label>
+            <label for="credit_card_provider">8. Who do you use for credit card processing?</label>
               [text credit_card_provider id:credit_card_provider class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="payment_processing_select">Did you buy or rent your payment processing equipment?</label>
-              [select payment_processing_select id:payment_processing_select class:form-control "Buy" "Rent"]
+            <label for="payment_processing_select">9. Did you buy or rent your payment processing equipment?</label>
+              [select payment_processing_select id:payment_processing_select class:form-control "" "Buy" "Rent"]
           </div>
 
           <div class="form-group">
-            <label for="contract_length">How long is your contract?</label>
+            <label for="contract_length">10. How long is your contract?</label>
               [text contract_length id:contract_length class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="monthly_processing_volume">Is your typical monthly processing volume:</label>
-              [select monthly_processing_volume id:monthly_processing_volume class:form-control "Less than $10,000" "Over $10,000 but less than $50,000" "Over $50,000"]
+            <label for="monthly_processing_volume">11. Is your typical monthly processing volume:</label>
+              [select monthly_processing_volume id:monthly_processing_volume class:form-control "N/A" "Less than $10,000" "Over $10,000 but less than $50,000" "Over $50,000"]
           </div>
 
           <div class="form-group">
-            <label for="rule_change_aware">Are you aware of the recent changes to the rules governing credit card processors that require them to allow early termination of a contract without penalty, if they change their terms and conditions?</label>
+            <label for="rule_change_aware">12. Are you aware of the recent changes to the rules governing credit card processors that require them to allow early termination of a contract without penalty, if they change their terms and conditions?</label>
               [select rule_change_aware id:rule_change_aware class:form-control "Yes" "No"]
           </div>
 
           <div class="form-group">
-            <label for="using_bdc">Are you currently using any business financing from BDC (Business Development Bank of Canada) or any other major financial institution (in Canada or the USA)?</label>
+            <label for="using_bdc">13. Are you currently using any business financing from BDC (Business Development Bank of Canada) or any other major financial institution (in Canada or the USA)?</label>
               [select using_bdc id:using_bdc class:form-control "Yes" "No"]
           </div>
 
           <div class="form-group">
-            <strong>Are you a member of:</strong>
+            <strong>14. Are you a member of:</strong>
             <div class="checkbox">
               <label><input type="checkbox" name="professional_membership[]" value="cfib">Canada - CFIB (Canadian Federation of Independent Businesses)</label>
             </div>
@@ -213,31 +214,31 @@
 
           <hr />
 
-          <strong>If the business is a restaurant / hotel:</strong>
+          <p><strong>(Ontario only) If the business is a restaurant / hotel:</strong></p>
 
           <div class="form-group">
-            <label for="frustrating_regulations">What city regulations do you find the most frustrating to work through in operating your restaurant business?</label>
+            <label for="frustrating_regulations">a) What city regulations do you find the most frustrating to work through in operating your restaurant business?</label>
               [text frustrating_regulations id:frustrating_regulations class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="unfair_business_expense">What business expense do you pay that you feel is unfair or you would like to see lowered?</label>
+            <label for="unfair_business_expense">b) What business expense do you pay that you feel is unfair or you would like to see lowered?</label>
               [text unfair_business_expense id:unfair_business_expense class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="opinion_on_inspection">How did you feel after your last inspection? (Health inspector, Ministry of Labour inspector or other)</label>
+            <label for="opinion_on_inspection">c) How did you feel after your last inspection? (Health inspector, Ministry of Labour inspector or other)</label>
               [text opinion_on_inspection id:opinion_on_inspection class:form-control]
           </div>
 
           <div class="form-group">
-            <label for="expand_business_knowledge">In what area of running your business do you feel you could have more knowledge or education in? (Food safety, Labour laws etc.)</label>
+            <label for="expand_business_knowledge">d) In what area of running your business do you feel you could have more knowledge or education in? (Food safety, Labour laws etc.)</label>
               [text expand_business_knowledge id:expand_business_knowledge class:form-control]
           </div>
 
           <hr />
 
-          <strong>Which of the following products do you most frequently buy and would be interested in saving up to 50% on, by joining a buying group? (Please select at least 3-5 products)</strong>
+          <strong>15. Which of the following products do you most frequently buy and would be interested in saving up to 50% on, by joining a buying group? (Please select at least 3-5 products)</strong>
         </div>
       </div>
       <div class="row">
@@ -254,6 +255,7 @@
           </div>
       </div>
 
+      <div class="clearfix"></div>
       <hr />
 
       <div class="form-horizontal">
